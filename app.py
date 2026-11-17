@@ -6,7 +6,7 @@ from flask import Flask, render_template_string, request, Response
 
 app = Flask(__name__)
 
-DB_PATH = os.path.expanduser("~/blurmedia.db")
+DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "blurmedia.db")
 TOKEN = os.environ.get("9061854857:AAEMu5zwdNOurOsKFU1PBdHuzG2sSY_SuH8")
 
 HTML = """
